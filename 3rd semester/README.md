@@ -11,7 +11,7 @@ Contains basic information about development (per requirement of the university)
 ![Welcome page](images/welcome-page.png)
 
 2. Theory page
-Used book: Engibaryan, I. A. Fiber-Optic Communication Lines: Study Guide / I. A. Engibaryan, V. V. Zuev. - Moscow: IPR Media, 2022. - 160 p. - ISBN 978-5-4497-1707-8. - Text: electronic // Digital Educational Resource IPR SMART: [website]. - URL: <https://www.iprbookshop.ru/122221.html> (accessed on 26.07.2022). - Access mode: for authorized users. - DOI: <https://doi.org/10.23682/122221>.
+Used book: Engibaryan, I. A. Fiber-Optic Communication Lines: Study Guide / I. A. Engibaryan, V. V. Zuev. - Moscow: IPR Media, 2022. - 160 p. - ISBN 978-5-4497-1707-8. - Text: electronic // Digital Educational Resource IPR SMART: [website]. - URL: <https://www.iprbookshop.ru/122221.html> (accessed on 25.01.2024). - Access mode: for authorized users. - DOI: <https://doi.org/10.23682/122221>.
 Book is significantly shortened and split to introduction with 3 chapters. Chapters are stored in an SQLite database in blobs as plain PDF files that are displayed using Micorosft Edge WebView2.
 ![Theory page](images/theory-page.png)
 
