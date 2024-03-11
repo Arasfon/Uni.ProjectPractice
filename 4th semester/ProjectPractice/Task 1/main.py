@@ -1,4 +1,4 @@
-def triangle_area(x1: float, y1: float, x2: float, y2: float, x3: float, y3: float) -> float:
+def triangle_area(x1, y1, x2, y2, x3, y3):
     """
     Вычисляет площадь треугольника
     :param x1: Абсцисса первой точки
@@ -12,7 +12,7 @@ def triangle_area(x1: float, y1: float, x2: float, y2: float, x3: float, y3: flo
     return 1.0 / 2 * abs((x2 - x1) * (y3 - y1) - (x3 - x1) * (y2 - y1))
 
 
-def pentagon_area(x1: float, y1: float, x2: float, y2: float, x3: float, y3: float, x4: float, y4: float, x5: float, y5: float) -> float:
+def pentagon_area(x1, y1, x2, y2, x3, y3, x4, y4, x5, y5):
     """
     Вычисляет площадь пятиугольника
     :param x1: Абсцисса первой точки
@@ -27,9 +27,7 @@ def pentagon_area(x1: float, y1: float, x2: float, y2: float, x3: float, y3: flo
     :param y5: Ордината пятой точки
     :return: Значение площади пятиугольника
     """
-    return triangle_area(x1, y1, x2, y2, x3, y3) + \
-        triangle_area(x1, y1, x3, y3, x4, y4) + \
-        triangle_area(x1, y1, x4, y4, x5, y5)
+    return triangle_area(x1, y1, x2, y2, x3, y3) + triangle_area(x1, y1, x3, y3, x4, y4) + triangle_area(x1, y1, x4, y4, x5, y5)
 
 
 try:
@@ -60,5 +58,5 @@ try:
         file.write("\n")
         file.write(f"Площадь пятиугольника с заданными точками равна {result}\n")
 except OSError:
-    print(f"Ошибка записи в файл")
+    print("Ошибка записи в файл")
     raise
