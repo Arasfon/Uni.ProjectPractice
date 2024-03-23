@@ -46,17 +46,17 @@ except ZeroDivisionError:
     print("Некорректный ввод — все числа не должны быть равны нулю")
     exit()
 
-print(f"Площадь пятиугольника с заданными точками равна {result}")
+print(f"Площадь пятиугольника с заданными точками равна {result:.3f}")
 
 try:
-    with open("output.txt", "w", encoding="utf-8") as file:
+    with open("task1_output.txt", "w", encoding="utf-8") as file:
         file.write(f"Координаты первой точки: ({x1}, {y1})\n")
         file.write(f"Координаты второй точки: ({x2}, {y2})\n")
         file.write(f"Координаты третьей точки: ({x3}, {y3})\n")
         file.write(f"Координаты четвёртой точки: ({x4}, {y4})\n")
         file.write(f"Координаты пятой точки: ({x5}, {y5})\n")
         file.write("\n")
-        file.write(f"Площадь пятиугольника с заданными точками равна {result}\n")
+        file.write(f"Площадь пятиугольника с заданными точками равна {result:.3f}\n")
 except OSError:
     print("Ошибка записи в файл")
     raise
