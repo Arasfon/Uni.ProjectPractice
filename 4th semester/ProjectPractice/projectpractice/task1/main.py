@@ -49,7 +49,7 @@ except ZeroDivisionError:
 print(f"Площадь пятиугольника с заданными точками равна {result}")
 
 try:
-    with open("triangle_area.txt", "w", encoding="utf-8") as file:
+    with open("output.txt", "w", encoding="utf-8") as file:
         file.write(f"Координаты первой точки: ({x1}, {y1})\n")
         file.write(f"Координаты второй точки: ({x2}, {y2})\n")
         file.write(f"Координаты третьей точки: ({x3}, {y3})\n")

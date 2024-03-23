@@ -21,7 +21,7 @@ print(f"Результат (ceil): {ceil(result)}")
 print(f"Результат (floor): {floor(result)}")
 print(f"Результат (trunc): {trunc(result)}")
 
-with open("result.txt", "w") as file:
+with open("output.txt", "w") as file:
     file.write(f"x: {x}\n")
     file.write(f"y: {y}\n")
     file.write(f"a: {a}\n")
