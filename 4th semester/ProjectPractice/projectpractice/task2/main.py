@@ -1,4 +1,4 @@
-from functions_module import calculate
+from functions import calculate
 from math import ceil, floor, trunc
 
 try:
