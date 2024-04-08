@@ -1,18 +1,18 @@
-from . import branch1
-from . import branch2
-from . import branch3
+import branch1
+import branch2
+import branch3
 
 
 class PiecewiseFunction:
     """Класс для хранения значений аргументов и вычисения значения кусочно-заданной функции"""
 
-    x = 0
-    y = 0
-    a = 0
-    b = 0
-
-    def __init__(self):
+    def __init__(self, x, y, a, b):
         print("Работает конструктор")
+
+        self.x = x
+        self.y = y
+        self.a = a
+        self.b = b
 
     def read_arguments_from_stdin(self):
         """Считывает аргументы функции с стандартного потока ввода"""
@@ -43,7 +43,7 @@ class PiecewiseFunction:
         return branch3.calculate(self.x, self.y, self.a)
 
 
-function = PiecewiseFunction()
+function = PiecewiseFunction(0, 0, 0, 0)
 function.read_arguments_from_stdin()
 
 result = 0
