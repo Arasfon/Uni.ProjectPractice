@@ -1,6 +1,9 @@
 /task1_output.txt
 /task2_output.txt
 /task2_log.log
+/result.docx
+/result.xlsx
+/result.jpg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
