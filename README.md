@@ -1,4 +1,4 @@
-# MTUCI.ProjectPractice
+# Uni.ProjectPractice
 
 This is a repository for the projects created as coursework for the university course "Project practice".
 
